@@ -8,6 +8,4 @@ class Show < ActiveRecord::Base
       item.name
     end
   end
-  
-  def 
 end
