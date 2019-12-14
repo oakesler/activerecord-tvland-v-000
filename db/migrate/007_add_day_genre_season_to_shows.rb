@@ -1,6 +1,10 @@
-
-
-def change
-    add_column :students do |t|
-      t.integer :grade 
-      t.string :birthdate
+class AddDayGenreSeasonToShows < ActiveRecord::Migration[5.1]
+  
+  def change
+    add_column :shows do |t|
+      t.string :day
+      t.string :genre
+      t.string :season
+    end
+  end
+end
